@@ -25,7 +25,7 @@ plus_std_TLOC = plus_assert['TLOC'].std()
 moins_std_WMC = moins_assert[' WMC'].std()
 moins_std_TLOC = moins_assert['TLOC'].std()
 
-# Résultats
+# Résultats des moyennes
 print("\nLes classes avec plus de 20 assertions contiennent en moyenne:")
 print("TLOC: " + str(plus_avg_TLOC))
 print("WMC " + str(plus_avg_WMC))
@@ -46,6 +46,6 @@ print("\nLe résultat de la statistique du test t pour WMC est: " + str(t_WMC))
 t_TLOC = (plus_avg_TLOC - moins_avg_TLOC) / math.sqrt((plus_std_TLOC**2 / len(plus_assert)) + (moins_std_TLOC**2 / len(moins_assert)))
 print("\nLe résultat de la statistique du test t pour TLOC est: " + str(t_TLOC))
 
-## Calcul des degrés de libertés ##
+## Calcul des degrés de liberté ##
 deg = len(plus_assert) + len(moins_assert) - 2
 print("\nLe degré de liberté est: " + str(deg))
