@@ -26,11 +26,11 @@ moins_std_WMC = moins_assert[' WMC'].std()
 moins_std_TLOC = moins_assert['TLOC'].std()
 
 # Résultats des moyennes
-print("\nLes classes avec plus de 20 assertions contiennent en moyenne:")
+print("\nLes classes avec 20 assertions et plus contiennent en moyenne:")
 print("TLOC: " + str(plus_avg_TLOC))
 print("WMC " + str(plus_avg_WMC))
 
-print("\nLes classes avec plus de 20 assertions contiennent en moyenne:")
+print("\nLes classes avec moins de 20 assertions contiennent en moyenne:")
 print("TLOC: " + str(moins_avg_TLOC))
 print("WMC " + str(moins_avg_WMC))
 
